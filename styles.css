@@ -1,5 +1,21 @@
 * {
   color:white;
+  margin:0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2 {
+  margin:15px 0 15px 0;
+}
+
+.sign-up-btn {
+  border-radius: 10px;
+  border:none;
+  padding:8px;
+  margin:15px 0 15px 0;
 }
 
 /*NAV*/
@@ -37,8 +53,9 @@ nav a {
 
 header {
   background-image: url(images/city-scape.svg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0 0 ;
+  background-size: cover;
   height:400px;
 }
 
@@ -104,26 +121,54 @@ input[type=search] {
   width: 50%;
 }
 
-.content-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sign-up-btn {
-  border-radius: 10px;
-  background-color: #F09233;
-  border:none;
-  padding:8px;
+.orange-btn {
+  background-color: rgb(240, 146, 51);
 }
 
 /*SECTION COLLABORATION*/
 
 #collaboration{
   background-color: rgb(39, 53, 71);
+  padding:30px;
 }
 
 .collaboration-content{
   margin: 0 auto;
+  width:65%;
+  padding: 5px;
+}
+
+.collaboration-img{
+  float:left;
   width:50%;
+  padding:30px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.red-btn {
+  background-color: rgb(203, 56, 55);
+}
+
+/*SECTION DEFINITION*/
+
+#definition{
+  background-image: url(images/forklift.svg);
+  background-size: cover;
+  height:400px;
+  position:relative;
+}
+
+.definition-content{
+  margin: 0 auto;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  width: 350px;
+}
+
+.blue-btn {
+  background-color: rgb(49, 68, 88);
 }
