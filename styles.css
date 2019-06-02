@@ -1,11 +1,129 @@
+* {
+  color:white;
+}
+
+/*NAV*/
+
 nav {
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
   padding-top: 15px;
-  height: 100px;
+  height:30px;
 }
 
 nav a {
   color: rgba(255,255,255,0.8);
   text-decoration: none;
+}
+
+.top-left{
+  float:left;
+  margin: 0 0 0 20px;
+}
+
+.top-links {
+  display: inline-block;
+  float:right;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/*HEADER*/
+
+header {
+  background-image: url(images/city-scape.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:400px;
+}
+
+/*HEADER - SEARCH*/
+
+/*Search bar*/
+
+.search-bar{
+  height:45px;
+  position:relative;
+  padding:10px;
+}
+
+/*Search bar elements*/
+
+#npm-logo-search-bar,#bear-logo-search-bar, .search-btn, input[type=search], #login {
+  float:left;
+  height:40px;
+}
+
+#npm-logo-search-bar,#bear-logo-search-bar, #login {
+  margin:0 5px 0 5px;
+}
+
+input[type=search], .search-btn {
+  background-color: rgb(31, 82, 111);   
+  border-color: #4C738B;
+  border-style:solid;
+  color: grey;
+  padding:5px;
+}
+
+input[type=search] { 
+  border-width:1px;
+  width: 70%;
+}
+
+.search-btn {
+  border-width: 1px 1px 1px 0;
+  width: 5%;
+}
+
+#login{
+  width:10%;
+  text-align:center;
+}
+
+#login a {
+  text-decoration: none;
+  line-height:30px;
+}
+
+/*HEADER-CONTENT*/
+
+.content-header{
+  width: 60%;
+  margin: 0 auto;
+  height:250px;
+}
+
+.content-header-left {
+  float: left;
+  width: 50%;
+}
+
+.content-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sign-up-btn {
+  border-radius: 10px;
+  background-color: #F09233;
+  border:none;
+  padding:8px;
+}
+
+/*SECTION COLLABORATION*/
+
+#collaboration{
+  background-color: rgb(39, 53, 71);
+}
+
+.collaboration-content{
+  margin: 0 auto;
+  width:50%;
 }
