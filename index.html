@@ -29,31 +29,55 @@
   <!-- end of NAVBAR -->
 
   <!-- HEADER - for introductory content, with logo & search form -->
-  <header class="header">
-    <img src="images/npm-logo.png" alt="NPM logo displaying">
-    <form role="search">
-      <input type="search" id="mySearch" name="q" placeholder="find packages" aria-label="Search bar to find packages">
-      <button class="submit-btn">search</button>
-    </form>
-    <a href="#">sign up</a> or <a href="#">log in</a>
-    <img src="images/bear-logo.png">
-    <h3>Build amazing things</h3>
-    <p>npm is the package manager for JavaScript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.</p>
-    <button class="sign-up-btn">Sign Up for npm</button>
+  <header>
+
+    <div class="search-bar">
+      
+      <img id="npm-logo-search-bar" src="images/npm-logo.png" alt="NPM logo displaying">
+
+      <form role="search">
+        <div class="search-form">
+          <input type="search" id="mySearch" name="q" placeholder="find packages" aria-label="Search bar to find packages">
+          <button class="search-btn"></button>
+        </div>
+      </form>
+
+      <div id="login">
+        <a href="#">sign up</a> or <a href="#">log in</a>
+      </div>
+
+      <img id="bear-logo-search-bar" src="images/bear-logo.png">
+
+    </div>
+
+    <div class="content-header">
+      <div class="content-header-left">
+        <h1>Build amazing things</h1>
+        <p>npm is the package manager for JavaScript and the world's largest software registry. Discover packages of reusable code - and assemble them in powerful new ways.</p>
+        <button class="sign-up-btn">Sign Up for npm</button>
+      </div>
+    </div>
+
   </header>
   <!-- end of HEADER -->
 
   <!-- SECTION COLLABORATION -->
   <section id="collaboration">
-    <img src="images/collaboration.svg">
-    <h3>npm Orgs is powerful collaboration - for free</h3>
-    <ul class="collaboration-links">
-      <li>Encourage code discovery and re-use within teams</li>
-      <li>Publish and control access to your own namespace</li>
-      <li>Manage public and private code with the same workflow</li>
-    </ul>
-    <button class="sign-up-btn">Sign Up for Orgs</button>
-    <p>or, <a href="#">Learn more about Orgs</a></p>
+    <div class="collaboration-content">
+      <div class="collaboration-img">
+          <img src="images/collaboration.svg">
+      </div>
+      <div class="collaboration-content">
+          <h1>npm Orgs is powerful collaboration - for free</h1>
+          <ul class="collaboration-links">
+            <li>Encourage code discovery and re-use within teams</li>
+            <li>Publish and control access to your own namespace</li>
+            <li>Manage public and private code with the same workflow</li>
+          </ul>
+          <button class="sign-up-btn">Sign Up for Orgs</button>
+          <p>or, <a href="#">Learn more about Orgs</a></p>
+      </div>
+    </div>
   </section>
   <!-- end of SECTION COLLABORATION -->
 
@@ -66,7 +90,7 @@
 
   <!-- SECTION USE -->
   <section id="use">
-    <h3>What can you make with 475,000 building blocks?</h3>
+    <h1>What can you make with 475,000 building blocks?</h1>
     <p>The npm registry hosts almost half a million packages of free, reusable code - the largest software registry in the world.</p>
     <article class="usage-box">
       <img src="images/binoculars.svg">
