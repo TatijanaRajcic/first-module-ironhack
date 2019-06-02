@@ -6,16 +6,13 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color:white;
+  color:rgba(255,255,255,0.8);
 }
 
 /*USED ACROSS SEVERAL SECTIONS*/
 
 h1,h2 {
-  margin:15px 0 15px 0;
-}
-
-h2 {
+  margin:15px 0;
   font-weight: lighter;
 }
 
@@ -23,7 +20,7 @@ h2 {
   border-radius: 10px;
   border:none;
   padding:8px;
-  margin:15px 0 15px 0;
+  margin:15px 0;
   color:white;
 }
 
@@ -31,23 +28,17 @@ h2 {
   margin: 0 auto;
 }
 
-.link {
+.link, nav a {
   text-decoration: none;
-  color:white;
+  color:rgba(255,255,255,0.8);
 }
 
 /*NAV*/
 
 nav {
   background-color: #C12127;
-  color: rgba(255,255,255,0.8);
   padding-top: 15px;
-  height:30px;
-}
-
-nav a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
+  height:40px;
 }
 
 .top-left{
@@ -56,9 +47,7 @@ nav a {
 }
 
 .top-links {
-  display: inline-block;
   float:right;
-  padding: 0;
   margin: 0 20px 0 0;
 }
 
@@ -71,34 +60,38 @@ nav a {
 
 header {
   background-image: url(images/city-scape.svg);
-  background-repeat: no-repeat;
   background-position: 0 0 ;
+  background-repeat: no-repeat;
   background-size: cover;
-  height:400px;
 }
-
-/*HEADER - SEARCH*/
 
 /*Search bar*/
 
 .search-bar{
   height:45px;
-  position:relative;
   padding:10px;
 }
 
 /*Search bar elements*/
 
-#npm-logo-search-bar,#bear-logo-search-bar, .search-btn, input[type=search], #login {
+.search-bar-element {
   float:left;
   height:40px;
 }
 
-#npm-logo-search-bar,#bear-logo-search-bar, #login {
-  margin:0 5px 0 5px;
+/*add style to independent elements*/
+
+#npm-logo,#bear-logo, #login {
+  margin:0 8px;
 }
 
-input[type=search], .search-btn {
+#login a {
+  line-height:30px;
+}
+
+/*add style to visually grouped elements*/
+
+#my-search, #search-btn {
   background-color: rgb(31, 82, 111);   
   border-color: #4C738B;
   border-style:solid;
@@ -106,30 +99,21 @@ input[type=search], .search-btn {
   padding:5px;
 }
 
-input[type=search] { 
+#my-search { 
   border-width:1px;
   width: 70%;
 }
 
-.search-btn {
+#search-btn {
   border-width: 1px 1px 1px 0;
   width: 5%;
 }
 
-#login {
-  width:10%;
-  text-align:center;
-}
-
-#login a {
-  line-height:30px;
-}
-
-/*HEADER-CONTENT*/
+/*Header content*/
 
 .content-header{
   width: 60%;
-  height:250px;
+  height:275px;
 }
 
 .content-header-left {
@@ -172,14 +156,15 @@ input[type=search] {
 }
 
 .collaboration-offset {
-  padding: 0px 0px 0px 470px;
+  padding: 0px 0px 0px 460px;
 }
 
 /*SECTION DEFINITION*/
 
 #definition{
   background-image: url(images/forklift.svg);
-  background-size: cover;
+  background-position: 0 0 ;
+  background-repeat: no-repeat;
   height:400px;
   position:relative;
 }
@@ -194,7 +179,6 @@ input[type=search] {
 .blue-btn {
   background-color: rgb(49, 68, 88);
 }
-
 
 /*SECTION USE*/
 
@@ -226,6 +210,11 @@ input[type=search] {
 
 .usage-box p {
   padding:0 20px 20px 20px;
+}
+
+.usage-box a {
+  text-decoration: none;
+  color:rgb(208, 74, 73);
 }
 
 .usage-box h4 {

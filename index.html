@@ -16,7 +16,7 @@
   <!-- NAVBAR - for navigation purposes -->
   <nav>
     <div class="top-left">
-      <a class = "heart" href="#">♥︎</a>
+      <a class="heart" href="#">♥︎</a>
       <span class="acronym">Neophobe Plebeian Mumpsimus</span>
     </div>
     <ul class="top-links">
@@ -31,26 +31,17 @@
 
   <!-- HEADER - for introductory content, with logo & search form -->
   <header>
-
     <div class="search-bar">
-      
-      <img id="npm-logo-search-bar" src="images/npm-logo.png" alt="NPM logo displaying">
-
+      <img class="search-bar-element" id="npm-logo" src="images/npm-logo.png" alt="NPM logo displaying">
       <form role="search">
-        <div class="search-form">
-          <input type="search" id="mySearch" name="q" placeholder="find packages" aria-label="Search bar to find packages">
-          <button class="search-btn"></button>
-        </div>
+        <input type="search" class="search-bar-element" id="my-search" name="q" placeholder="find packages" aria-label="Search bar to find packages">
+        <button class="search-bar-element" id="search-btn"></button>
       </form>
-
-      <div id="login">
+      <div class="search-bar-element" id="login">
         <a href="#" class="link">sign up</a> or <a href="#" class="link">log in</a>
       </div>
-
-      <img id="bear-logo-search-bar" src="images/bear-logo.png">
-
+      <img class="search-bar-element" id="bear-logo" src="images/bear-logo.png" alt="Bear logo displaying">
     </div>
-
     <div class="content-header centered">
       <div class="content-header-left">
         <h1>Build amazing things</h1>
@@ -58,21 +49,16 @@
         <button class="sign-up-btn orange-btn">Sign Up for npm</button>
       </div>
     </div>
-
   </header>
   <!-- end of HEADER -->
 
   <!-- SECTION COLLABORATION -->
   <section id="collaboration">
-
     <div class="collaboration-content centered clearfix">
-
       <div class="collaboration-img">
           <img src="images/collaboration.svg">
       </div>
-
       <h2>npm Orgs is powerful collaboration - for free</h2>
-
       <div class="collaboration-offset">
         <ul class="collaboration-links">
             <li>Encourage code discovery and re-use within teams</li>
@@ -82,9 +68,7 @@
         <button class="sign-up-btn red-btn">Sign Up for Orgs</button>
         <p>or, <a href="#" class="link">Learn more about Orgs</a></p>
       </div>
-
     </div>
-
   </section>
   <!-- end of SECTION COLLABORATION -->
 
@@ -100,17 +84,15 @@
 
   <!-- SECTION USE -->
   <section id="use">
-
     <div class="use-heading centered">
       <h2>What can you make with 475,000 building blocks?</h2>
       <p>The npm registry hosts almost half a million packages of free, reusable code - the largest software registry in the world.</p>
     </div>
-
     <div class="use-content centered">
       <article class="usage-box">
           <img src="images/binoculars.svg">
           <h4>Find</h4>
-          <p>Libraries like JQuery, Bootstrap, React and Angular, and components from frameworks such as Emher.</p>
+          <p>Libraries like <a href="#">JQuery</a>, <a href="#">Bootstrap</a>, <a href="#">React and <a href="#">Angular</a>, and components from frameworks such as <a href="#">Ember</a>.</p>
         </article>
         <article class="usage-box">
             <img src="images/mountain-flag.svg">
@@ -123,7 +105,6 @@
             <p>Assemble packages like building blocks to quickly develop awesome new projects.</p>
         </article>
     </div>
-    
   </section>
   <!-- end of SECTION USE -->
 
